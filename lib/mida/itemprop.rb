@@ -15,7 +15,7 @@ module Mida
       'link' => 'href',     'meta' => 'content',
       'object' => 'data',   'source' => 'src',
       'time' => 'datetime', 'track' => 'src',
-      'video' => 'src'
+      'video' => 'src',     'data' => 'value'
     }
 
     URL_ATTRIBUTES = ['data', 'href', 'src']
