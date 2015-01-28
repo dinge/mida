@@ -56,6 +56,12 @@ module Mida
       @id == other.id && @properties == other.properties
     end
 
+    def flat_properties
+      @flat_properties ||= {}.tap do |h|
+        properties.each { |k, v| h[k] = v.first }
+      end.with_indifferent_access
+    end
+
   private
 
     # Validate the properties so that they are in their proper form
